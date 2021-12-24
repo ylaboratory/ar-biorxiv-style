@@ -1,10 +1,17 @@
 \documentclass{article}
 
-\usepackage{arxiv}
+\usepackage{xiv}
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
 \usepackage{hyperref}       % hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}                           % remove boxes / color around links
 \usepackage{url}            % simple URL typesetting
 \usepackage{booktabs}       % professional-quality tables
 \usepackage{amsfonts}       % blackboard math symbols
@@ -16,45 +23,18 @@
 \usepackage{natbib}
 \usepackage{doi}
 
+
+
 \title{A template for the \emph{arxiv} style}
 
-% Here you can change the date presented in the paper title
-%\date{September 9, 1985}
-% Or remove it
-%\date{}
+\author{Anna Hippocampus\inst{1} \and
+Elefant Striatum\inst{2,*}}
 
-\author{ \href{https://orcid.org/0000-0000-0000-0000}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}David S.~Hippocampus}\thanks{Use footnote for providing further
-		information about author (webpage, alternative
-		address)---\emph{not} for acknowledging funding agencies.} \\
-	Department of Computer Science\\
-	Cranberry-Lemon University\\
-	Pittsburgh, PA 15213 \\
-	\texttt{hippo@cs.cranberry-lemon.edu} \\
-	%% examples of more authors
-	\And
-	\href{https://orcid.org/0000-0000-0000-0000}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}Elias D.~Striatum} \\
-	Department of Electrical Engineering\\
-	Mount-Sheikh University\\
-	Santa Narimana, Levand \\
-	\texttt{stariate@ee.mount-sheikh.edu} \\
-	%% \AND
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
-	%% \And
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
-	%% \And
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
-}
+\institute{Department of Computer Science, Rice University \and
+Department of Electrical and Computer Engineering, Rice University \\
+\textit{* Correspondence to:} \email{\{striatum\}@rice.edu}}
 
-% Uncomment to override  the `A preprint' in the header
+% uncomment to add other headers as wanted
 %\renewcommand{\headeright}{Technical Report}
 %\renewcommand{\undertitle}{Technical Report}
 \renewcommand{\shorttitle}{\textit{arXiv} Template}
@@ -64,8 +44,7 @@
 %%% $ pdfinfo template.pdf
 \hypersetup{
 pdftitle={A template for the arxiv style},
-pdfsubject={q-bio.NC, q-bio.QM},
-pdfauthor={David S.~Hippocampus, Elias D.~Striatum},
+pdfauthor={Anna Hippocampus, Elefant SStriatum},
 pdfkeywords={First keyword, Second keyword, More},
 }
 
@@ -78,7 +57,7 @@ pdfkeywords={First keyword, Second keyword, More},
 
 
 % keywords can be removed
-\keywords{First keyword \and Second keyword \and More}
+% \keywords{First keyword \and Second keyword \and More}
 
 
 \section{Introduction}
