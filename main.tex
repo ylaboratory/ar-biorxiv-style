@@ -14,18 +14,22 @@
 }                           % remove boxes / color around links
 \usepackage{url}            % simple URL typesetting
 \usepackage{booktabs}       % professional-quality tables
+\usepackage{multirow}       % multirows in tables
 \usepackage{amsfonts}       % blackboard math symbols
+\usepackage{amsmath}        % equation management
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{cleveref}       % smart cross-referencing
-\usepackage{lipsum}         % Can be removed after putting your text content
 \usepackage{graphicx}
-\usepackage{doi}
+\usepackage{setspace}       % more control of document spacing
+\setstretch{1.2}
 
-\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\usepackage[backend=biber,style=nature,sorting=none]{biblatex}
 \addbibresource{references.bib}
 
-\title{A template for the \emph{arxiv} style}
+\usepackage{lipsum}         % delete when real text is available
+
+\title{A template for the \emph{arxiv} and \emph{biorxiv} style}
 
 \author{Anna Hippocampus\inst{1} \and
 Elefant Striatum\inst{2,*}}
@@ -92,6 +96,8 @@ Citations use \verb+biblatex+. The documentation may be found at
 \begin{center}
 	\url{https://ctan.org/pkg/biblatex}
 \end{center}
+
+We can try to cite \cite{hadash2018estimate,kour2014fast,kour2014real}.
 
 \subsection{Figures}
 \lipsum[10]

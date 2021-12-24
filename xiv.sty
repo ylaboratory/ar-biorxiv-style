@@ -55,10 +55,10 @@
 \normalsize
 \renewcommand{\small}{%
   \@setfontsize\small\@ixpt\@xpt
-  \abovedisplayskip      6\p@ \@plus 1.5\p@ \@minus 4\p@
+  \abovedisplayskip      2\p@ \@plus 1.5\p@ \@minus 4\p@
   \abovedisplayshortskip \z@  \@plus 2\p@
   \belowdisplayskip      \abovedisplayskip
-  \belowdisplayshortskip 3\p@ \@plus 2\p@   \@minus 2\p@
+  \belowdisplayshortskip 2\p@ \@plus 1\p@   \@minus 2\p@
 }
 \renewcommand{\footnotesize}{\@setfontsize\footnotesize\@ixpt\@xpt}
 \renewcommand{\scriptsize}{\@setfontsize\scriptsize\@viipt\@viiipt}
@@ -128,6 +128,18 @@
    \setlength{\belowcaptionskip}{\@abovecaptionskip}%
    \@float{table}}
   {\end@float}
+
+\long\def\@makecaption#1#2{%
+  \small
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{{\bfseries #1.} #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    {\bfseries #1.} #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
 
 % footnote formatting
 \setlength{\footnotesep }{6.65\p@}
