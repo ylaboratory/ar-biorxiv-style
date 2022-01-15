@@ -24,6 +24,15 @@
 \usepackage{setspace}       % more control of document spacing
 \setstretch{1.2}
 
+% for leaving comments in the paper
+% feel free to add more entries with own colors:
+% https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+\usepackage[dvipsnames]{xcolor}
+\usepackage{soul}
+\DeclareRobustCommand{\mariecurie}[1]{{\begingroup\sethlcolor{Aquamarine}\hl{[m: #1]}\endgroup}}
+\DeclareRobustCommand{\lilylovelace}[1]{{\begingroup\sethlcolor{Apricot}\hl{[l: #1]}\endgroup}}
+\DeclareRobustCommand{\newtnewton}[1]{{\begingroup\sethlcolor{YellowGreen}\hl{[l: #1]}\endgroup}}
+
 \usepackage[backend=biber,style=nature,sorting=none]{biblatex}
 \addbibresource{references.bib}
 
