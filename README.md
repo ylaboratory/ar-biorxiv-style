@@ -6,12 +6,12 @@ how to handle the title, authors, and their institutions.
 The project hosts an aesthetic and simple LaTeX style suitable for "preprint" publications such as arXiv and biorXiv, etc.
 It is based on the [**nips_2018.sty**](https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.sty) style.
 
-This styling maintains the esthetic of NIPS but adding and changing features to make it (IMO) even better and more suitable for preprints.
-The result looks fairly different from NIPS style so that readers won't get confused to think that the preprint was published in NIPS.
+This styling maintains the esthetic of NeurIPS but adding and changing features to make it (IMO) even better and more suitable for preprints.
+The result looks fairly different from NeurIPS style so that readers won't get confused to think that the preprint was published in NIPS.
 
-### Why NIPS?
+### Why NeurIPS?
 
-Because the NIPS styling is a comfortable single column format that is very esthetic and convenient for reading.
+Because the NeurIPS styling is a comfortable single column format that is very aesthetic and convenient for reading.
 
 ## Usage:
 
